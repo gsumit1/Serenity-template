@@ -1,6 +1,6 @@
 
-@Rest @RestDemo
-Scenario: Validate the post request                             [90m# features/RestAssured.feature:4[0m
-  [32mGiven [0m[32mthe following trade:[0m                                    [90m# com.serenity.stepDefinations.RestDemoStepDefination.the_following_trade(java.util.List<java.util.Map<java.lang.String, java.lang.String>>)[0m
-  [32mWhen [0m[32mI record the trade[0m                                       [90m# com.serenity.stepDefinations.RestDemoStepDefination.i_record_the_trade()[0m
-  [32mThen [0m[32mthe recorded trade should include the following details:[0m [90m# com.serenity.stepDefinations.RestDemoStepDefination.the_recorded_trade_should_include_the_following_details(java.util.List<java.util.Map<java.lang.String, java.lang.String>>)[0m
+@tag @BookingFlight
+Scenario: Booking Flight                      [90m# features/BookingFlights.feature:4[0m
+  [32mGiven [0m[32mI am on travel portal[0m                 [90m# com.serenity.stepDefinations.CommonStepDefination.i_am_on_travel_portal()[0m
+  [32mWhen [0m[32mI am searching flight[0m                  [90m# com.serenity.stepDefinations.FlightBooking.FlightBookingStepDefination.i_am_searching_flight(io.cucumber.datatable.DataTable)[0m
+  [32mThen [0m[32mI should be successfully booked flight[0m [90m# com.serenity.stepDefinations.FlightBooking.FlightBookingStepDefination.i_should_be_successfully_booked_flight()[0m

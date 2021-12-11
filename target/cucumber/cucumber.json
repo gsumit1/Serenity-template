@@ -3,105 +3,95 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-11-22T03:59:08.597Z",
+        "start_timestamp": "2021-12-11T06:53:49.651Z",
         "line": 4,
-        "name": "Validate the post request",
+        "name": "Booking Flight",
         "description": "",
-        "id": "record-a-new-trade;validate-the-post-request",
+        "id": "booking-flight;booking-flight",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1423681000,
+              "duration": 28348000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "the following trade:",
+            "name": "I am on travel portal",
             "match": {
-              "location": "com.serenity.stepDefinations.RestDemoStepDefination.the_following_trade(java.util.List\u003cjava.util.Map\u003cjava.lang.String, java.lang.String\u003e\u003e)"
+              "location": "com.serenity.stepDefinations.CommonStepDefination.i_am_on_travel_portal()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "security",
-                  "buySell",
-                  "quantity",
-                  "priceInCents"
-                ]
-              },
-              {
-                "cells": [
-                  "APPL",
-                  "BUY",
-                  "10",
-                  "10000"
-                ]
-              }
-            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1482342000,
+              "duration": 3176000000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I record the trade",
+            "line": 6,
+            "name": "I am searching flight",
             "match": {
-              "location": "com.serenity.stepDefinations.RestDemoStepDefination.i_record_the_trade()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 143601000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "the recorded trade should include the following details:",
-            "match": {
-              "location": "com.serenity.stepDefinations.RestDemoStepDefination.the_recorded_trade_should_include_the_following_details(java.util.List\u003cjava.util.Map\u003cjava.lang.String, java.lang.String\u003e\u003e)"
+              "location": "com.serenity.stepDefinations.FlightBooking.FlightBookingStepDefination.i_am_searching_flight(io.cucumber.datatable.DataTable)"
             },
             "rows": [
               {
                 "cells": [
-                  "security",
-                  "buySell",
-                  "quantity",
-                  "priceInCents"
+                  "TripType",
+                  "OneWay"
                 ]
               },
               {
                 "cells": [
-                  "APPL",
-                  "BUY",
-                  "10",
-                  "10000"
+                  "Date",
+                  "November-15"
+                ]
+              },
+              {
+                "cells": [
+                  "From",
+                  "London"
+                ]
+              },
+              {
+                "cells": [
+                  "To",
+                  "Frankfurt"
                 ]
               }
             ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should be successfully booked flight",
+            "match": {
+              "location": "com.serenity.stepDefinations.FlightBooking.FlightBookingStepDefination.i_should_be_successfully_booked_flight()"
+            },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Rest"
+            "name": "@tag"
           },
           {
-            "name": "@RestDemo"
+            "name": "@BookingFlight"
           }
         ]
       }
     ],
-    "name": "Record a new trade",
+    "name": "Booking Flight",
     "description": "",
-    "id": "record-a-new-trade",
+    "id": "booking-flight",
     "keyword": "Feature",
-    "uri": "file:features/RestAssured.feature",
+    "uri": "file:features/BookingFlights.feature",
     "tags": [
       {
-        "name": "@Rest",
+        "name": "@tag",
         "type": "Tag",
         "location": {
           "line": 1,
