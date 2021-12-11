@@ -80,7 +80,7 @@
 				<configuration>
 					<forkCount>1</forkCount>
 					<includes>
-						<include>com.serenity.test.TestRunner1.java</include>
+						<include>com.serenity.test.TestRunner.java</include>
 					</includes>
 				</configuration>
 			</plugin>
